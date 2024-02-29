@@ -21,10 +21,12 @@ ARG PORT=3005
 # ARG NODE_ENV=production
 # to be able to run tests (for example in CI), do not set production as environment
 ENV NODE_ENV=${NODE_ENV}
-ENV PORT=${PORT}
+ENV PORT=3004
 ENV REDIS_HOST=${REDIS_HOST}
 ENV REDIS_PORT=${REDIS_PORT}
 ENV REDIS_PASSWORD=${REDIS_PASSWORD}
+ENV PROXY=["188.74.210.21:6100,ymksufrw:qlpk1buio6q8", "38.154.227.167:5868,ymksufrw:qlpk1buio6q8", "2.56.119.93:5074,ymksufrw:qlpk1buio6q8", "188.74.183.10:8279,ymksufrw:qlpk1buio6q8", "185.199.231.45:8382,ymksufrw:qlpk1buio6q8", "45.155.68.129:8133,ymksufrw:qlpk1buio6q8", "185.199.229.156:7492,ymksufrw:qlpk1buio6q8", "185.199.228.220:7300,ymksufrw:qlpk1buio6q8", "154.95.36.199:6893,ymksufrw:qlpk1buio6q8", "188.74.210.207:6286,ymksufrw:qlpk1buio6q8", "45.94.47.66:8110,ymksufrw:qlpk1buio6q8"] for requests (optional) (e.g. ["https://proxy1.com", "https://proxy2.com"])
+ENV TMDB_KEY=8d6d91941230817f7807d643736e8a49
 
 ENV NPM_CONFIG_LOGLEVEL=warn
 
